@@ -389,6 +389,14 @@
     [
       "5af8e142-fb58-41ba-9cf3-f697c93b3fc8",
       "Servo Connector"
+    ],
+    [
+      "eb189e08-ece1-4e3b-b50a-47a4943c620d",
+      "IMU"
+    ],
+    [
+      "c242176b-05fe-43b7-ae32-a39d1320d9f0",
+      "POWER"
     ]
   ],
   "text_variables": {}
