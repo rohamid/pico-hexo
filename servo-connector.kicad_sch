@@ -365,6 +365,151 @@
 				)
 			)
 		)
+		(symbol "Device:D_Zener_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener_Small"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_Small_0_1"
+				(polyline
+					(pts
+						(xy 0.762 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.016) (xy -0.762 0) (xy 0.762 -1.016) (xy 0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -478,6 +623,102 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -705,10 +946,22 @@
 		)
 	)
 	(junction
+		(at 46.99 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05b84807-b2de-4f31-a411-24d15c6aac86")
+	)
+	(junction
 		(at 161.29 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05c4589f-0dbd-4f2c-b339-b4c21cbe5131")
+	)
+	(junction
+		(at 46.99 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07455848-37d8-41a1-bad1-43cd336dc201")
 	)
 	(junction
 		(at 129.54 74.93)
@@ -759,10 +1012,22 @@
 		(uuid "1e20d5cb-6a5f-4308-836e-07705466147f")
 	)
 	(junction
-		(at 129.54 139.7)
+		(at 46.99 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "26ea4578-0228-409c-837c-710683af73ac")
+		(uuid "20ab7c76-3cb2-43a9-b920-290207e9f009")
+	)
+	(junction
+		(at 46.99 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bbc9c98-9c5b-46bd-a825-e6aff21ecb9b")
+	)
+	(junction
+		(at 46.99 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2be340b3-1770-4557-88e5-9819722a693e")
 	)
 	(junction
 		(at 129.54 123.19)
@@ -783,6 +1048,12 @@
 		(uuid "3147136c-c52e-43f9-82b2-ddc16a3bb43d")
 	)
 	(junction
+		(at 46.99 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3227f118-c25b-4bd6-8f23-e07537419dbc")
+	)
+	(junction
 		(at 129.54 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -793,6 +1064,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3663e276-40ca-4eeb-a0c4-cd407f1d96cb")
+	)
+	(junction
+		(at 46.99 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "390d701d-5aa9-4549-a96a-5be3c09b2225")
+	)
+	(junction
+		(at 46.99 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d19865c-d1dd-4194-9d42-821d52c807a2")
 	)
 	(junction
 		(at 161.29 95.25)
@@ -813,12 +1096,6 @@
 		(uuid "47236c1c-138a-42a8-bc4b-bff34ad44482")
 	)
 	(junction
-		(at 129.54 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5316f93e-9442-4f50-b399-1a10059b2662")
-	)
-	(junction
 		(at 129.54 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -831,6 +1108,12 @@
 		(uuid "56ddce2e-885e-4350-b86e-f92849793640")
 	)
 	(junction
+		(at 46.99 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6415d129-18e9-42bb-be5e-615f4bc08344")
+	)
+	(junction
 		(at 161.29 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -841,6 +1124,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "714d08c4-9285-432d-aeda-c1f3e7213688")
+	)
+	(junction
+		(at 46.99 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75f4c63f-6e12-42f5-9023-c515043a0fa7")
+	)
+	(junction
+		(at 46.99 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77f81b8b-7f57-4b00-b270-5038a2af00b7")
 	)
 	(junction
 		(at 129.54 53.34)
@@ -859,6 +1154,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81bc6de8-d839-4554-b314-0586831c830d")
+	)
+	(junction
+		(at 46.99 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84041213-7a7e-4de3-a030-ad0b9fa84229")
 	)
 	(junction
 		(at 161.29 72.39)
@@ -891,6 +1192,18 @@
 		(uuid "8bfa8059-0557-4a43-9b58-b33b9f339221")
 	)
 	(junction
+		(at 46.99 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90f3b146-be00-4e89-8c76-37a079063237")
+	)
+	(junction
+		(at 46.99 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "925a573a-634a-4fd1-b149-6717d42cb8a8")
+	)
+	(junction
 		(at 161.29 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -915,28 +1228,28 @@
 		(uuid "a9cc84e3-4e9c-4792-8d7f-d201b4c7b359")
 	)
 	(junction
+		(at 46.99 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa70f053-931c-4b9b-81e8-e9c7c48560d5")
+	)
+	(junction
+		(at 46.99 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac8c47c8-82b1-4aa0-8e4b-b41b4a120eab")
+	)
+	(junction
 		(at 129.54 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af07b1c4-88af-4d58-84fa-0f2dad641b88")
 	)
 	(junction
-		(at 129.54 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b16bedff-7d9f-41a3-b3c9-caf4df802bb2")
-	)
-	(junction
 		(at 161.29 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1be69af-f6d9-4125-ad90-398168ec95aa")
-	)
-	(junction
-		(at 161.29 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b1e509d3-08a6-41a7-b286-1ed6bf9806ab")
 	)
 	(junction
 		(at 161.29 74.93)
@@ -957,10 +1270,28 @@
 		(uuid "bf6f072b-916b-4ad3-b037-1723fee8790f")
 	)
 	(junction
+		(at 46.99 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c38a116d-a5be-4c7b-84f7-38c0ef8d99b8")
+	)
+	(junction
 		(at 161.29 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5dcfb9b-72db-41a8-9b9d-ada0ab615a2a")
+	)
+	(junction
+		(at 46.99 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c686d661-46ac-4728-8bf5-287f349e3e2d")
+	)
+	(junction
+		(at 46.99 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c84726bd-0b21-4883-a9f5-4acfd357709a")
 	)
 	(junction
 		(at 129.54 95.25)
@@ -981,6 +1312,18 @@
 		(uuid "d15e858d-4188-4f99-b332-68f7086bced0")
 	)
 	(junction
+		(at 46.99 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3db1f2c-45e6-45fc-b5cf-6a4096d27f8f")
+	)
+	(junction
+		(at 46.99 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d92b15ba-67a2-437c-ae42-627a7b9cc755")
+	)
+	(junction
 		(at 161.29 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -993,10 +1336,10 @@
 		(uuid "e381c4a3-f795-461f-acce-fa76ea322f34")
 	)
 	(junction
-		(at 161.29 142.24)
+		(at 46.99 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e688c696-f3a0-4b1a-83b8-46dc52380016")
+		(uuid "ec86410e-7793-4e06-9b9b-159063820230")
 	)
 	(junction
 		(at 129.54 58.42)
@@ -1005,28 +1348,34 @@
 		(uuid "edd9ba18-7481-4265-8e80-9d211424f0ea")
 	)
 	(junction
-		(at 161.29 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f04f17f8-042a-42b0-bbed-c71e0261ddd5")
-	)
-	(junction
-		(at 161.29 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f297e448-ea2c-4e66-96cb-ecf7d35790ec")
-	)
-	(junction
 		(at 129.54 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f441db72-6819-4daf-972b-bb6c4937f77e")
 	)
 	(junction
-		(at 129.54 142.24)
+		(at 46.99 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fa519d7b-e06f-4d94-92a7-ec16937cd52e")
+		(uuid "f84507d5-8b2e-46de-8f50-8b652a07365a")
+	)
+	(bus_entry
+		(at 74.93 64.77)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0410eaa7-1f6a-49f9-a84d-aca9cb849b42")
+	)
+	(bus_entry
+		(at 74.93 97.79)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06eda150-d550-4119-b101-c6ddc40b925f")
 	)
 	(bus_entry
 		(at 74.93 50.8)
@@ -1048,12 +1397,30 @@
 	)
 	(bus_entry
 		(at 74.93 109.22)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd04220-6392-40cc-a511-f3c77fb1ff7a")
+	)
+	(bus_entry
+		(at 74.93 109.22)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "17728049-441f-48f2-ba9b-72d08776ecb4")
+	)
+	(bus_entry
+		(at 74.93 100.33)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1954984f-f750-4072-b0e4-94953f419c67")
 	)
 	(bus_entry
 		(at 74.93 81.28)
@@ -1063,6 +1430,60 @@
 			(type default)
 		)
 		(uuid "21785035-40ab-4754-beb1-464daa5ff5ad")
+	)
+	(bus_entry
+		(at 74.93 86.36)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2560538b-4a35-4045-ac26-ecb1890d3008")
+	)
+	(bus_entry
+		(at 74.93 123.19)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281add27-4ef0-4b95-8ebc-fe8d9d56e9f8")
+	)
+	(bus_entry
+		(at 74.93 92.71)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "286f67e2-67f7-4412-8812-36b6b2e290f1")
+	)
+	(bus_entry
+		(at 74.93 111.76)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34531c05-6e25-48e6-9fc0-49dd53ec18ea")
+	)
+	(bus_entry
+		(at 74.93 120.65)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37dae41c-0968-44ff-be67-2dc33bb752af")
+	)
+	(bus_entry
+		(at 74.93 53.34)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb55bd9-4578-4b3e-9ba9-770c28ce1624")
 	)
 	(bus_entry
 		(at 74.93 95.25)
@@ -1092,6 +1513,15 @@
 		(uuid "442b1df5-bba1-4b21-911d-ccca1f6c1d2a")
 	)
 	(bus_entry
+		(at 74.93 58.42)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48ff38db-5ed7-4924-839c-acad861d18ca")
+	)
+	(bus_entry
 		(at 74.93 114.3)
 		(size 2.54 2.54)
 		(stroke
@@ -1119,6 +1549,15 @@
 		(uuid "521289a1-09a5-452c-a074-0e445b48d333")
 	)
 	(bus_entry
+		(at 74.93 81.28)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e84bea4-e373-4202-b34f-bcfa045535b7")
+	)
+	(bus_entry
 		(at 74.93 120.65)
 		(size 2.54 2.54)
 		(stroke
@@ -1126,6 +1565,15 @@
 			(type default)
 		)
 		(uuid "67c10ded-4330-477e-9f63-eef32d70e88a")
+	)
+	(bus_entry
+		(at 74.93 55.88)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6eb26b8a-62e6-4491-994f-7b1ac81633ba")
 	)
 	(bus_entry
 		(at 74.93 53.34)
@@ -1146,15 +1594,6 @@
 		(uuid "7a89ddb4-637d-4859-9d11-06b03965542a")
 	)
 	(bus_entry
-		(at 74.93 137.16)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e9b21f3-df00-4dc3-a8a4-6bdc0b093e36")
-	)
-	(bus_entry
 		(at 74.93 100.33)
 		(size 2.54 2.54)
 		(stroke
@@ -1162,6 +1601,15 @@
 			(type default)
 		)
 		(uuid "828e5441-f6c3-486c-9e5d-b903b6ae61ba")
+	)
+	(bus_entry
+		(at 74.93 72.39)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8877b40c-7b3f-422e-8c4d-29bd549a2b1f")
 	)
 	(bus_entry
 		(at 74.93 58.42)
@@ -1201,6 +1649,42 @@
 	)
 	(bus_entry
 		(at 74.93 125.73)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a45780db-f3b4-454b-b1fd-36b7e773741c")
+	)
+	(bus_entry
+		(at 74.93 128.27)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4681275-ac82-4d21-9c3d-283f68aabbe5")
+	)
+	(bus_entry
+		(at 74.93 114.3)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6dddbae-e186-4f40-ac4e-9622cf7d4472")
+	)
+	(bus_entry
+		(at 74.93 78.74)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0d8fe8f-94c1-4462-97d5-6f0adbb71ec7")
+	)
+	(bus_entry
+		(at 74.93 125.73)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1218,22 +1702,22 @@
 		(uuid "b567a12f-dfc8-4780-abf3-2c9fe8a832c2")
 	)
 	(bus_entry
-		(at 74.93 134.62)
-		(size 2.54 2.54)
+		(at 74.93 50.8)
+		(size -2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c00d8c23-f0ac-41b7-a47c-711bfa40c0a4")
+		(uuid "c4a22184-14de-45d0-b093-6bbc2edf5039")
 	)
 	(bus_entry
-		(at 74.93 142.24)
-		(size 2.54 2.54)
+		(at 74.93 69.85)
+		(size -2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3807009-d0b6-4ea1-a791-b5ff3fe1b4ae")
+		(uuid "cf9f9838-b2fc-4d4d-b874-5ae2952e7e68")
 	)
 	(bus_entry
 		(at 74.93 67.31)
@@ -1263,6 +1747,24 @@
 		(uuid "db19762d-fb03-475f-ab09-10189eaa0ecc")
 	)
 	(bus_entry
+		(at 74.93 67.31)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d8938b-581f-4eb7-92b4-1c51c54cf4d2")
+	)
+	(bus_entry
+		(at 74.93 83.82)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7542569-c627-46c2-9105-0d57750c7ec7")
+	)
+	(bus_entry
 		(at 74.93 72.39)
 		(size 2.54 2.54)
 		(stroke
@@ -1272,13 +1774,22 @@
 		(uuid "eaab3ad7-405c-4a9a-b61d-bd69117003f9")
 	)
 	(bus_entry
-		(at 74.93 139.7)
-		(size 2.54 2.54)
+		(at 74.93 95.25)
+		(size -2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fb97af91-576a-4b6d-8d0e-efa1bfe0d174")
+		(uuid "eb48af71-68b5-4ce1-80ff-0a0708fa6140")
+	)
+	(bus_entry
+		(at 74.93 106.68)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee13946b-9ebb-434e-8a32-40f0ed077dfe")
 	)
 	(wire
 		(pts
@@ -1292,7 +1803,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 128.27) (xy 91.44 128.27)
+			(xy 77.47 114.3) (xy 91.44 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1352,6 +1863,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 128.27) (xy 46.99 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "063254d2-8de4-4d06-afa0-a515bcaca8f5")
+	)
+	(wire
+		(pts
 			(xy 129.54 67.31) (xy 129.54 69.85)
 		)
 		(stroke
@@ -1382,6 +1903,36 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 125.73) (xy 58.42 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "091016c9-d388-4785-9e6c-70033875e064")
+	)
+	(wire
+		(pts
+			(xy 46.99 114.3) (xy 46.99 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a63d1af-2acc-4e79-ae86-674950b2129e")
+	)
+	(wire
+		(pts
+			(xy 72.39 55.88) (xy 58.42 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b2f0908-7ec2-44bc-b645-246f29f05c07")
+	)
+	(wire
+		(pts
 			(xy 129.54 81.28) (xy 132.08 81.28)
 		)
 		(stroke
@@ -1392,7 +1943,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 130.81) (xy 91.44 130.81)
+			(xy 77.47 116.84) (xy 91.44 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1412,23 +1963,33 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 137.16) (xy 129.54 139.7)
+			(xy 72.39 114.3) (xy 58.42 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "10ca98b0-087e-468f-b1b7-c3703cf18744")
+		(uuid "0f888de7-a256-4642-b10f-912ec6c19b7f")
 	)
 	(wire
 		(pts
-			(xy 96.52 144.78) (xy 101.6 144.78)
+			(xy 53.34 125.73) (xy 46.99 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11312d41-a2cd-4ed9-8dde-1579f0670316")
+		(uuid "10e828d2-24b5-4b1c-bb92-c4becdbcef6f")
+	)
+	(wire
+		(pts
+			(xy 53.34 81.28) (xy 46.99 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e87654-2069-4b27-99a6-bc08e512ffc1")
 	)
 	(wire
 		(pts
@@ -1452,16 +2013,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 142.24) (xy 101.6 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13aeddc5-533a-4d5e-9b43-bfb491ecd9e8")
-	)
-	(wire
-		(pts
 			(xy 161.29 53.34) (xy 163.83 53.34)
 		)
 		(stroke
@@ -1469,26 +2020,6 @@
 			(type default)
 		)
 		(uuid "14db13a1-3d7b-4fdf-b192-8dae306604f9")
-	)
-	(wire
-		(pts
-			(xy 129.54 139.7) (xy 129.54 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14f0f431-9272-44b2-a4fc-d951d2a83971")
-	)
-	(wire
-		(pts
-			(xy 129.54 130.81) (xy 129.54 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "160a6794-ad19-4509-8cd9-89f7e743bfa1")
 	)
 	(wire
 		(pts
@@ -1500,6 +2031,26 @@
 		)
 		(uuid "16408191-c4ff-409a-a2a2-d3716ea7c423")
 	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 58.42 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16f2c5c5-28f4-4972-b61b-216742167bfa")
+	)
+	(wire
+		(pts
+			(xy 46.99 83.82) (xy 46.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17226ffd-338c-4042-a679-7e8527bd09a2")
+	)
 	(bus
 		(pts
 			(xy 74.93 67.31) (xy 74.93 69.85)
@@ -1509,6 +2060,26 @@
 			(type default)
 		)
 		(uuid "184b6901-a76f-469a-855a-9bd588302ed5")
+	)
+	(wire
+		(pts
+			(xy 46.99 81.28) (xy 46.99 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c522758-6b27-4516-8db7-137acf7ab47c")
+	)
+	(wire
+		(pts
+			(xy 72.39 97.79) (xy 58.42 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c892d2e-90b3-4c7f-a471-71b91ea217be")
 	)
 	(wire
 		(pts
@@ -1539,6 +2110,16 @@
 			(type default)
 		)
 		(uuid "1d10dcb3-6715-4656-b4bf-579b3140e877")
+	)
+	(wire
+		(pts
+			(xy 72.39 69.85) (xy 58.42 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e7523cc-48e7-4b4b-871f-04bc0431f8af")
 	)
 	(wire
 		(pts
@@ -1602,6 +2183,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 102.87) (xy 46.99 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a01b3a0-a065-4d43-80b8-3175dc98b7e9")
+	)
+	(wire
+		(pts
 			(xy 96.52 128.27) (xy 101.6 128.27)
 		)
 		(stroke
@@ -1609,6 +2200,16 @@
 			(type default)
 		)
 		(uuid "2ab3d2b1-5f26-4195-9bfd-8df80f69419b")
+	)
+	(wire
+		(pts
+			(xy 46.99 100.33) (xy 46.99 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b3084e3-8c0f-4d54-b67a-97ac2bb50e29")
 	)
 	(bus
 		(pts
@@ -1622,6 +2223,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 95.25) (xy 46.99 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cd15134-bb92-42a5-9efc-6ab8ba94f303")
+	)
+	(wire
+		(pts
 			(xy 223.52 101.6) (xy 223.52 102.87)
 		)
 		(stroke
@@ -1629,16 +2240,6 @@
 			(type default)
 		)
 		(uuid "300727d2-74f9-4a4a-95ec-be8f20a3d4b5")
-	)
-	(wire
-		(pts
-			(xy 161.29 142.24) (xy 163.83 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30c82696-d192-481d-a0a6-879fb50a3563")
 	)
 	(wire
 		(pts
@@ -1682,7 +2283,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 116.84) (xy 91.44 116.84)
+			(xy 77.47 102.87) (xy 91.44 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1702,13 +2303,33 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 125.73) (xy 91.44 125.73)
+			(xy 77.47 111.76) (xy 91.44 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "36ef41ce-e548-4891-9582-2fbb2af38267")
+	)
+	(wire
+		(pts
+			(xy 53.34 83.82) (xy 46.99 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f3d042-51f1-4a17-bf45-2a1523cff988")
+	)
+	(wire
+		(pts
+			(xy 72.39 72.39) (xy 58.42 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b4640c-4560-4d25-bd62-fcfe20739421")
 	)
 	(wire
 		(pts
@@ -1760,6 +2381,16 @@
 		)
 		(uuid "3b0cc674-a6f5-467d-9fbb-010e388a7015")
 	)
+	(wire
+		(pts
+			(xy 46.99 130.81) (xy 46.99 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b4d6fbd-e4eb-4be9-a873-d9c9fd305f02")
+	)
 	(bus
 		(pts
 			(xy 74.93 58.42) (xy 74.93 64.77)
@@ -1772,7 +2403,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 109.22) (xy 91.44 109.22)
+			(xy 77.47 95.25) (xy 91.44 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1780,15 +2411,35 @@
 		)
 		(uuid "40fd9f10-02dd-44da-9fe5-a72a8869c6c9")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 74.93 128.27) (xy 74.93 134.62)
+			(xy 53.34 72.39) (xy 46.99 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "43cc60a4-51dc-4330-afd5-8bfc38119f2c")
+		(uuid "4199edfb-85f9-43a3-84cc-0b3b2a14f717")
+	)
+	(wire
+		(pts
+			(xy 72.39 111.76) (xy 58.42 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441eac00-3f6c-4bb2-978f-a937f0c2f734")
+	)
+	(wire
+		(pts
+			(xy 72.39 95.25) (xy 58.42 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44466b30-b31d-4910-b5ed-bd984cda30b5")
 	)
 	(wire
 		(pts
@@ -1812,16 +2463,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 144.78) (xy 163.83 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4749f241-7793-4e6a-804e-d62ad45af042")
-	)
-	(wire
-		(pts
 			(xy 161.29 58.42) (xy 161.29 60.96)
 		)
 		(stroke
@@ -1829,6 +2470,26 @@
 			(type default)
 		)
 		(uuid "4920d7b8-cdb7-4665-a2d2-6383439c8fa9")
+	)
+	(wire
+		(pts
+			(xy 72.39 53.34) (xy 58.42 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49841437-4486-4357-877d-8653cf1bd56f")
+	)
+	(wire
+		(pts
+			(xy 53.34 58.42) (xy 46.99 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4985b715-cc85-4a01-bf35-07de295c8073")
 	)
 	(wire
 		(pts
@@ -1882,13 +2543,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 102.87) (xy 91.44 102.87)
+			(xy 72.39 88.9) (xy 58.42 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "500c85c2-06e6-4008-961e-32f1992e25e1")
+		(uuid "4ecef78d-5ed7-4e6e-b720-b01471281d2e")
 	)
 	(wire
 		(pts
@@ -1922,13 +2583,43 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 142.24) (xy 132.08 142.24)
+			(xy 46.99 74.93) (xy 46.99 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5556b266-42e4-4e91-83a2-d7ac7b494cba")
+		(uuid "5374bf90-f883-4ddf-bc67-e3d6730f94df")
+	)
+	(wire
+		(pts
+			(xy 46.99 128.27) (xy 46.99 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e5c4ec-116d-4bd9-bc3d-5da914381ea4")
+	)
+	(wire
+		(pts
+			(xy 72.39 86.36) (xy 58.42 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553907e8-9706-48e7-8d2b-f7d8ff470ae4")
+	)
+	(wire
+		(pts
+			(xy 53.34 86.36) (xy 46.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55e78da3-b2d6-4595-a2ed-56a60b37dc1c")
 	)
 	(wire
 		(pts
@@ -1942,33 +2633,33 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 139.7) (xy 161.29 142.24)
+			(xy 46.99 88.9) (xy 46.99 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58e645c2-721a-4bf0-8911-1559000bd04e")
+		(uuid "576c5a2c-f7d2-4de2-b9b2-872f015b24cb")
 	)
 	(wire
 		(pts
-			(xy 161.29 142.24) (xy 161.29 144.78)
+			(xy 72.39 128.27) (xy 58.42 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b4bc88e-21e8-47c2-9fb0-fb9da0936c90")
+		(uuid "58604d96-99c3-44be-bc1f-de9a92a34d85")
 	)
 	(wire
 		(pts
-			(xy 96.52 139.7) (xy 101.6 139.7)
+			(xy 72.39 81.28) (xy 58.42 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e2e891d-fa97-49f6-a080-573de9f6a1b6")
+		(uuid "5b65a2f2-87e4-42b6-9a5c-27cdb49c2d28")
 	)
 	(wire
 		(pts
@@ -2002,6 +2693,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 60.96) (xy 46.99 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65f15d85-1514-42ce-8825-8013c783c671")
+	)
+	(wire
+		(pts
+			(xy 53.34 95.25) (xy 46.99 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "676306ef-9694-473f-ba36-1fb608453829")
+	)
+	(wire
+		(pts
 			(xy 129.54 74.93) (xy 129.54 81.28)
 		)
 		(stroke
@@ -2032,13 +2743,33 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 111.76) (xy 91.44 111.76)
+			(xy 72.39 109.22) (xy 58.42 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697515e0-a290-4e1c-b26e-ecde2ab38aa9")
+	)
+	(wire
+		(pts
+			(xy 77.47 97.79) (xy 91.44 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "699c536b-e960-4c9d-ab88-9132f8d6cc84")
+	)
+	(wire
+		(pts
+			(xy 53.34 55.88) (xy 46.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a361cb6-2212-490c-8c43-dedf631e295f")
 	)
 	(bus
 		(pts
@@ -2062,13 +2793,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 137.16) (xy 161.29 139.7)
+			(xy 46.99 55.88) (xy 46.99 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "711fe9b7-6a80-477b-92c3-6d80d3cb046b")
+		(uuid "6de5bcbe-3de1-4997-878b-fecc1be325d7")
 	)
 	(wire
 		(pts
@@ -2079,6 +2810,16 @@
 			(type default)
 		)
 		(uuid "716b6a81-690f-4042-b041-8145d9cd367e")
+	)
+	(wire
+		(pts
+			(xy 53.34 116.84) (xy 46.99 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "733b72fe-bcd6-48d4-b53a-5a82de93b820")
 	)
 	(bus
 		(pts
@@ -2102,6 +2843,26 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 116.84) (xy 46.99 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "759970d6-1b5f-451a-9e93-60c4e417b2f2")
+	)
+	(wire
+		(pts
+			(xy 72.39 100.33) (xy 58.42 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7756a194-bc19-44d7-9b40-7fdb76aa6c20")
+	)
+	(wire
+		(pts
 			(xy 129.54 69.85) (xy 129.54 72.39)
 		)
 		(stroke
@@ -2122,16 +2883,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 97.79) (xy 91.44 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79c540ba-8db9-4b56-8041-7a3d3a9cc600")
-	)
-	(wire
-		(pts
 			(xy 96.52 116.84) (xy 101.6 116.84)
 		)
 		(stroke
@@ -2149,6 +2900,26 @@
 			(type default)
 		)
 		(uuid "7e9c7451-730d-429f-8811-7e552dc2e3cb")
+	)
+	(wire
+		(pts
+			(xy 46.99 102.87) (xy 46.99 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f2c1171-3387-4f18-9ddf-27169738b555")
+	)
+	(wire
+		(pts
+			(xy 72.39 123.19) (xy 58.42 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813701f2-b13f-4e54-aac8-1053b9c909e3")
 	)
 	(wire
 		(pts
@@ -2212,6 +2983,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 100.33) (xy 46.99 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894bdae1-46bb-4a22-9dab-3d5d74e8fac7")
+	)
+	(wire
+		(pts
 			(xy 77.47 83.82) (xy 91.44 83.82)
 		)
 		(stroke
@@ -2232,7 +3013,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 142.24) (xy 91.44 142.24)
+			(xy 77.47 128.27) (xy 91.44 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2312,7 +3093,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 114.3) (xy 91.44 114.3)
+			(xy 77.47 100.33) (xy 91.44 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2340,29 +3121,19 @@
 		)
 		(uuid "912de4be-8e2f-4565-b43b-f8d7bb6ce6ee")
 	)
-	(bus
+	(wire
 		(pts
-			(xy 74.93 139.7) (xy 74.93 142.24)
+			(xy 46.99 97.79) (xy 46.99 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "934aa5f8-7717-4a76-be80-abe326499523")
+		(uuid "95561830-ca67-4d00-b02f-006b7116b56d")
 	)
 	(wire
 		(pts
-			(xy 129.54 139.7) (xy 132.08 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "955f913b-8379-4dfd-9a81-2a897a8ead28")
-	)
-	(wire
-		(pts
-			(xy 161.29 144.78) (xy 161.29 147.32)
+			(xy 161.29 130.81) (xy 161.29 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2372,7 +3143,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 144.78) (xy 91.44 144.78)
+			(xy 77.47 130.81) (xy 91.44 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2410,25 +3181,15 @@
 		)
 		(uuid "97d19e71-053b-4f86-93b8-d649caafc889")
 	)
-	(bus
-		(pts
-			(xy 74.93 137.16) (xy 74.93 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9900b0c2-c1fb-47ce-8678-92e6861960ea")
-	)
 	(wire
 		(pts
-			(xy 129.54 142.24) (xy 129.54 144.78)
+			(xy 53.34 53.34) (xy 46.99 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9a131684-a2c3-4482-a5b9-e495e243e365")
+		(uuid "99da6ed0-10d3-43a5-a80d-372d3983a167")
 	)
 	(wire
 		(pts
@@ -2440,6 +3201,36 @@
 		)
 		(uuid "9ac4ae95-2c32-441a-a851-6c00a6832807")
 	)
+	(wire
+		(pts
+			(xy 46.99 67.31) (xy 46.99 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b14a5f7-d917-485e-8485-5a9820fd568d")
+	)
+	(wire
+		(pts
+			(xy 46.99 72.39) (xy 46.99 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c6cdb6b-075c-46b8-b0e3-35849135997e")
+	)
+	(wire
+		(pts
+			(xy 46.99 86.36) (xy 46.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c9c7484-7d31-449d-a25c-d539e1202c91")
+	)
 	(bus
 		(pts
 			(xy 74.93 123.19) (xy 74.93 125.73)
@@ -2449,6 +3240,26 @@
 			(type default)
 		)
 		(uuid "9d9b5ee8-101f-4a8d-965b-4f83dd01616d")
+	)
+	(wire
+		(pts
+			(xy 72.39 102.87) (xy 58.42 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fdedd6c-a624-4b97-8b54-ebc2b56d45d2")
+	)
+	(wire
+		(pts
+			(xy 53.34 123.19) (xy 46.99 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a07147d9-ace0-4cd7-9b91-8a7b454766a1")
 	)
 	(wire
 		(pts
@@ -2512,6 +3323,26 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 114.3) (xy 46.99 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7737529-6d82-4884-962f-9146feb22082")
+	)
+	(wire
+		(pts
+			(xy 72.39 116.84) (xy 58.42 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f8a448-b99b-4631-a4b2-e408c615ff80")
+	)
+	(wire
+		(pts
 			(xy 96.52 86.36) (xy 101.6 86.36)
 		)
 		(stroke
@@ -2519,6 +3350,16 @@
 			(type default)
 		)
 		(uuid "a98dd9b8-edad-4ee7-b960-ea3e8c02a17b")
+	)
+	(wire
+		(pts
+			(xy 46.99 123.19) (xy 46.99 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab7ca74e-7717-43bd-b5fc-1f2de2286438")
 	)
 	(bus
 		(pts
@@ -2582,16 +3423,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 137.16) (xy 132.08 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b18f7f80-fa0e-4b8d-95ce-5ee599a07dc6")
-	)
-	(wire
-		(pts
 			(xy 223.52 111.76) (xy 223.52 110.49)
 		)
 		(stroke
@@ -2599,16 +3430,6 @@
 			(type default)
 		)
 		(uuid "b20bff36-c260-4f8b-9ae1-d7f2c7100164")
-	)
-	(wire
-		(pts
-			(xy 77.47 100.33) (xy 91.44 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b25b3217-2c6b-454c-af9a-02e83adfda61")
 	)
 	(wire
 		(pts
@@ -2632,13 +3453,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 139.7) (xy 163.83 139.7)
+			(xy 46.99 111.76) (xy 46.99 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b5644401-3f17-40c0-b213-1a2ccbd09e2a")
+		(uuid "b593555d-6069-4057-8eb6-10042911219a")
 	)
 	(wire
 		(pts
@@ -2682,13 +3503,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 130.81) (xy 161.29 137.16)
+			(xy 53.34 130.81) (xy 46.99 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ba7fadca-fb67-419c-ab95-ff43139f7f19")
+		(uuid "baecdd25-2cab-48ee-900d-fd1b09960799")
 	)
 	(bus
 		(pts
@@ -2709,6 +3530,16 @@
 			(type default)
 		)
 		(uuid "bbf52528-3a77-4571-ba01-f224c9daa382")
+	)
+	(wire
+		(pts
+			(xy 53.34 109.22) (xy 46.99 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be4518fa-f9db-46aa-bb44-484c14561cb1")
 	)
 	(wire
 		(pts
@@ -2739,6 +3570,16 @@
 			(type default)
 		)
 		(uuid "c0ac4e10-222e-4e97-9f3e-0f48487e0076")
+	)
+	(wire
+		(pts
+			(xy 53.34 69.85) (xy 46.99 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c351ebde-da58-4478-9b61-a06388623148")
 	)
 	(wire
 		(pts
@@ -2800,6 +3641,16 @@
 		)
 		(uuid "c7e3d760-c139-4ef8-87b7-4e18d1a45968")
 	)
+	(wire
+		(pts
+			(xy 53.34 111.76) (xy 46.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fc6963-f656-4c70-9396-2043e7853ee1")
+	)
 	(bus
 		(pts
 			(xy 74.93 109.22) (xy 74.93 111.76)
@@ -2822,13 +3673,23 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 137.16) (xy 101.6 137.16)
+			(xy 72.39 60.96) (xy 58.42 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb711819-c1e2-4750-877e-8a74927abfce")
+		(uuid "cba9ffa5-bab3-42a8-b512-37de9d430a48")
+	)
+	(wire
+		(pts
+			(xy 72.39 130.81) (xy 58.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbb9ad52-8614-4509-846b-8ad42bbc5c60")
 	)
 	(wire
 		(pts
@@ -2849,26 +3710,6 @@
 			(type default)
 		)
 		(uuid "cd8ae0e2-f26b-411a-9866-f61fbfc68bd0")
-	)
-	(wire
-		(pts
-			(xy 77.47 95.25) (xy 91.44 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf2b66fa-564f-43c7-b7e2-f0ea02077b39")
-	)
-	(bus
-		(pts
-			(xy 74.93 134.62) (xy 74.93 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf3690cd-f246-446c-ae3e-69289a9a5e4e")
 	)
 	(bus
 		(pts
@@ -2902,16 +3743,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 137.16) (xy 163.83 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d36796ea-a8ea-452e-90bd-3e5eea437eb8")
-	)
-	(wire
-		(pts
 			(xy 96.52 114.3) (xy 101.6 114.3)
 		)
 		(stroke
@@ -2922,7 +3753,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 123.19) (xy 91.44 123.19)
+			(xy 77.47 109.22) (xy 91.44 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2972,13 +3803,23 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 137.16) (xy 91.44 137.16)
+			(xy 77.47 123.19) (xy 91.44 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db46f66c-c1d4-4edb-a4ce-80e402da0da7")
+	)
+	(wire
+		(pts
+			(xy 53.34 97.79) (xy 46.99 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db59157f-cfb5-4068-8c7d-1ab4f032130f")
 	)
 	(wire
 		(pts
@@ -2992,6 +3833,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 53.34) (xy 46.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc345d41-a0e1-4223-b62c-cd731f8b3b41")
+	)
+	(wire
+		(pts
 			(xy 161.29 116.84) (xy 161.29 123.19)
 		)
 		(stroke
@@ -2999,6 +3850,16 @@
 			(type default)
 		)
 		(uuid "dcb89535-0b35-4731-8668-e9cb81016c85")
+	)
+	(wire
+		(pts
+			(xy 53.34 60.96) (xy 46.99 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd039b97-acd0-4b58-aa4e-bf2ee3065f83")
 	)
 	(wire
 		(pts
@@ -3029,6 +3890,16 @@
 			(type default)
 		)
 		(uuid "e0ca310d-9b29-4170-bdb6-e63850627bb6")
+	)
+	(wire
+		(pts
+			(xy 72.39 67.31) (xy 58.42 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ec7955-b73e-44b3-9208-01e908ec5274")
 	)
 	(wire
 		(pts
@@ -3070,6 +3941,16 @@
 		)
 		(uuid "e3c31fa5-ae41-41ca-8696-ce27b3cf2847")
 	)
+	(wire
+		(pts
+			(xy 53.34 88.9) (xy 46.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4c3c18b-bc41-49f0-a300-f26cd9d42fae")
+	)
 	(bus
 		(pts
 			(xy 74.93 81.28) (xy 74.93 83.82)
@@ -3089,6 +3970,16 @@
 			(type default)
 		)
 		(uuid "e702c5ac-5b5b-422a-ab94-99d7d7cbab3f")
+	)
+	(wire
+		(pts
+			(xy 53.34 67.31) (xy 46.99 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e918349c-b03d-4b40-bbe2-8c25a69250cd")
 	)
 	(wire
 		(pts
@@ -3142,6 +4033,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 74.93) (xy 46.99 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee55f34a-0775-4871-b167-767b53c04519")
+	)
+	(wire
+		(pts
 			(xy 96.52 109.22) (xy 101.6 109.22)
 		)
 		(stroke
@@ -3149,6 +4050,66 @@
 			(type default)
 		)
 		(uuid "efb64430-582d-4414-ad83-c4e520de1c84")
+	)
+	(wire
+		(pts
+			(xy 72.39 83.82) (xy 58.42 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a5ef23-7e64-4d4a-9ca0-e746e78a44e3")
+	)
+	(wire
+		(pts
+			(xy 46.99 69.85) (xy 46.99 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f243a9e2-6348-4364-ad89-1a764627a687")
+	)
+	(wire
+		(pts
+			(xy 46.99 125.73) (xy 46.99 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2a7a9ae-b4e7-495d-953e-65dbd0274811")
+	)
+	(wire
+		(pts
+			(xy 46.99 109.22) (xy 46.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2da62dd-bcc2-4632-832f-6c062077727d")
+	)
+	(wire
+		(pts
+			(xy 46.99 58.42) (xy 46.99 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f379269c-94a3-4a52-9864-93be667d8898")
+	)
+	(wire
+		(pts
+			(xy 72.39 74.93) (xy 58.42 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3c16fb2-bce2-43a6-9373-9fff62ced010")
 	)
 	(wire
 		(pts
@@ -3262,7 +4223,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 139.7) (xy 91.44 139.7)
+			(xy 77.47 125.73) (xy 91.44 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3282,16 +4243,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 144.78) (xy 132.08 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd79cde7-e9ca-4fc1-b002-d80de44ccaa2")
-	)
-	(wire
-		(pts
 			(xy 161.29 58.42) (xy 163.83 58.42)
 		)
 		(stroke
@@ -3299,6 +4250,17 @@
 			(type default)
 		)
 		(uuid "fdb1e93d-e74b-4db9-9cab-926b2a78fb3e")
+	)
+	(label "SERVO_7"
+		(at 72.39 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "086314b9-5b46-49bf-9890-dea7eba9db1d")
 	)
 	(label "SERVO_9"
 		(at 77.47 83.82 0)
@@ -3323,7 +4285,7 @@
 		(uuid "0afe1571-3097-4724-93ea-6210e231d4ab")
 	)
 	(label "SERVO_16"
-		(at 77.47 123.19 0)
+		(at 77.47 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3334,7 +4296,7 @@
 		(uuid "1b4a5a44-a143-4887-8405-6b9445a941b6")
 	)
 	(label "SERVO_22"
-		(at 77.47 142.24 0)
+		(at 77.47 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3345,7 +4307,7 @@
 		(uuid "2be6e1eb-34fa-4e02-aaed-73d42d17bd10")
 	)
 	(label "SERVO_12"
-		(at 77.47 109.22 0)
+		(at 77.47 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3355,8 +4317,19 @@
 		)
 		(uuid "3a05b05a-acdf-4acd-b89c-f13e89bed39a")
 	)
+	(label "SERVO_13"
+		(at 72.39 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3cc6bcb0-9db5-41f9-8fc9-db283a211bac")
+	)
 	(label "SERVO_18"
-		(at 77.47 128.27 0)
+		(at 77.47 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3365,6 +4338,17 @@
 			(justify left bottom)
 		)
 		(uuid "406d4063-4e24-4c04-9806-2c6720bdfeee")
+	)
+	(label "SERVO_6"
+		(at 72.39 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "435122c0-2140-40da-b7d0-1bcfb1deceb3")
 	)
 	(label "SERVO_2"
 		(at 77.47 58.42 0)
@@ -3378,7 +4362,7 @@
 		(uuid "46d627b8-610e-4039-99a4-454b128123f7")
 	)
 	(label "SERVO_20"
-		(at 77.47 137.16 0)
+		(at 77.47 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3387,6 +4371,17 @@
 			(justify left bottom)
 		)
 		(uuid "4a283cf2-c7c4-460f-aa32-6d1c02a81b83")
+	)
+	(label "SERVO_3"
+		(at 72.39 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4eb1dff7-415b-40c3-b1b9-663fa8cce475")
 	)
 	(label "SERVO_6"
 		(at 77.47 72.39 0)
@@ -3399,8 +4394,41 @@
 		)
 		(uuid "52a6744d-99dc-45fd-8b71-92974ec3f6c1")
 	)
+	(label "SERVO_17"
+		(at 72.39 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "576d53f0-d855-4e56-88c2-a52d87c242f7")
+	)
+	(label "SERVO_4"
+		(at 72.39 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58470149-8c69-413b-83e8-3c73c81ac9d0")
+	)
+	(label "SERVO_5"
+		(at 72.39 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58b189d8-18a8-4089-8bd9-1cf8f4844664")
+	)
 	(label "SERVO_23"
-		(at 77.47 144.78 0)
+		(at 77.47 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3411,15 +4439,26 @@
 		(uuid "59338e0d-2a88-40e4-8255-3b6640ceb551")
 	)
 	(label "SERVO_10"
-		(at 77.47 100.33 0)
+		(at 72.39 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "6c6b5a33-9278-4e2c-8702-23e165ad8fba")
+		(uuid "6b5956c2-1d08-4f49-b828-0a29e024d09f")
+	)
+	(label "SERVO_14"
+		(at 72.39 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "72387a9f-3642-4af9-814d-17a29240adbd")
 	)
 	(label "SERVO_1"
 		(at 77.47 55.88 0)
@@ -3432,8 +4471,41 @@
 		)
 		(uuid "7241c233-e3c3-4255-9308-85e21cacc9d7")
 	)
+	(label "SERVO_8"
+		(at 72.39 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "765da52d-202a-4ac1-86ef-41abb8d932b4")
+	)
+	(label "SERVO_11"
+		(at 72.39 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "796f063d-2a67-4290-8989-518a5745e2d7")
+	)
+	(label "SERVO_23"
+		(at 72.39 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81b6f587-e92f-4a27-9391-8775a33a19de")
+	)
 	(label "SERVO_17"
-		(at 77.47 125.73 0)
+		(at 77.47 111.76 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3442,6 +4514,28 @@
 			(justify left bottom)
 		)
 		(uuid "89ab7e7c-244c-42bd-b259-d63e7a282152")
+	)
+	(label "SERVO_1"
+		(at 72.39 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "96edd628-1fff-44ba-b890-a362fca9ba93")
+	)
+	(label "SERVO_18"
+		(at 72.39 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a873c63-d914-46e4-8c62-3712e1a15e3c")
 	)
 	(label "SERVO_4"
 		(at 77.47 67.31 0)
@@ -3454,6 +4548,28 @@
 		)
 		(uuid "9f72dd9e-239c-4f0e-bc61-197b9defe743")
 	)
+	(label "SERVO_9"
+		(at 72.39 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a0203e73-3b9c-42db-b897-9a1aaea37a13")
+	)
+	(label "SERVO_15"
+		(at 72.39 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8740a33-9c09-4404-ab98-3209428d35ec")
+	)
 	(label "SERVO_3"
 		(at 77.47 60.96 0)
 		(fields_autoplaced yes)
@@ -3465,16 +4581,16 @@
 		)
 		(uuid "a9f5e2ff-2902-43f8-8126-9423fb4bf3a5")
 	)
-	(label "SERVO_9"
-		(at 77.47 97.79 0)
+	(label "SERVO_16"
+		(at 72.39 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "ad672975-af20-4419-8999-b1d3bcab215f")
+		(uuid "b4497399-26fe-4fed-8461-9aaed9e4fe8c")
 	)
 	(label "SERVO_0"
 		(at 77.47 53.34 0)
@@ -3487,6 +4603,28 @@
 		)
 		(uuid "ba0b064f-badd-434a-a337-15cd2bd785b5")
 	)
+	(label "SERVO_19"
+		(at 72.39 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf51c27c-20f8-492a-855d-d3330d2daff4")
+	)
+	(label "SERVO_0"
+		(at 72.39 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c0bb6725-84b1-4084-b943-25f271d90b9f")
+	)
 	(label "SERVO_5"
 		(at 77.47 69.85 0)
 		(fields_autoplaced yes)
@@ -3497,6 +4635,17 @@
 			(justify left bottom)
 		)
 		(uuid "c1e2e02b-d2be-4dac-9826-7bff60cc94f9")
+	)
+	(label "SERVO_12"
+		(at 72.39 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c285e6d8-a933-451b-a6a7-4a8fde6e6336")
 	)
 	(label "SERVO_10"
 		(at 77.47 86.36 0)
@@ -3509,16 +4658,16 @@
 		)
 		(uuid "c97778d2-968d-4374-a24a-99d7ae648107")
 	)
-	(label "SERVO_8"
-		(at 77.47 95.25 0)
+	(label "SERVO_20"
+		(at 72.39 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "c9fdc83a-f409-4cc2-920a-60cc203e372a")
+		(uuid "d1bbd7a9-7304-4705-a2d0-94ea25db1943")
 	)
 	(label "SERVO_11"
 		(at 77.47 88.9 0)
@@ -3532,7 +4681,7 @@
 		(uuid "d8fe71c3-b878-4f4f-bb8e-98ecab600352")
 	)
 	(label "SERVO_14"
-		(at 77.47 114.3 0)
+		(at 77.47 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3542,16 +4691,27 @@
 		)
 		(uuid "d9a789bb-10ac-4837-8fb7-4f685356f587")
 	)
-	(label "SERVO_11"
-		(at 77.47 102.87 0)
+	(label "SERVO_21"
+		(at 72.39 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "d9e68669-20b6-48c8-a761-62dfcd9ac733")
+		(uuid "e041610d-20f4-44d3-b082-7e03a25f8396")
+	)
+	(label "SERVO_2"
+		(at 72.39 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3e88ce3-62ad-4d4b-b9f8-a3e9ee9740ce")
 	)
 	(label "SERVO_7"
 		(at 77.47 74.93 0)
@@ -3565,7 +4725,7 @@
 		(uuid "e49cbee8-d62b-44dd-9eec-07719f888ed7")
 	)
 	(label "SERVO_21"
-		(at 77.47 139.7 0)
+		(at 77.47 125.73 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3576,7 +4736,7 @@
 		(uuid "ebcc2420-f076-4b0b-b00b-b9471d18835a")
 	)
 	(label "SERVO_13"
-		(at 77.47 111.76 0)
+		(at 77.47 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3587,7 +4747,7 @@
 		(uuid "edcef865-fb34-4734-b844-dcd2e6b52e22")
 	)
 	(label "SERVO_19"
-		(at 77.47 130.81 0)
+		(at 77.47 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3597,8 +4757,19 @@
 		)
 		(uuid "f8cf8098-862a-4b34-b7f0-952f7c46288b")
 	)
+	(label "SERVO_22"
+		(at 72.39 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f9d2a451-cd1f-4c09-98f3-d02b1085ec6c")
+	)
 	(label "SERVO_15"
-		(at 77.47 116.84 0)
+		(at 77.47 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3619,6 +4790,74 @@
 			(justify right)
 		)
 		(uuid "f62d018c-7699-4bdf-9b26-e439ccccfc2c")
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 60.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "013453ff-ae5f-4cec-86b6-7688cef373ef")
+		(property "Reference" "D5"
+			(at 52.832 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a851b705-f677-41c0-bcb8-dd7018cbc66b")
+		)
+		(pin "1"
+			(uuid "f707a831-1544-4135-9997-523be4ebb0c7")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -3645,7 +4884,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 111.76 0)
 			(effects
 				(font
@@ -3689,7 +4928,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 147.32 0)
+		(at 161.29 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3698,7 +4937,7 @@
 		(fields_autoplaced yes)
 		(uuid "05cdffa5-f9af-4f0a-a5dd-21093a9dcb10")
 		(property "Reference" "#PWR028"
-			(at 161.29 153.67 0)
+			(at 161.29 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3707,7 +4946,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.29 152.4 0)
+			(at 161.29 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3715,7 +4954,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 147.32 0)
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +4963,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 147.32 0)
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +4972,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 147.32 0)
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3748,6 +4987,74 @@
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "065b387e-fb1f-4d3b-aa6e-6618a830e141")
+		(property "Reference" "D19"
+			(at 52.832 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "76f62966-7d51-425e-a933-bbc2b5782ee7")
+		)
+		(pin "1"
+			(uuid "c63866ff-f741-4104-81d4-6a0d6913ea6b")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -3781,7 +5088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 111.76 0)
 			(effects
 				(font
@@ -3830,82 +5137,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 137.16 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0d873c63-f2fc-4a3c-bcc9-407838ef99d0")
-		(property "Reference" "J15"
-			(at 139.7 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SERVO_PWR"
-			(at 139.7 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 137.16 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1da5fcf6-00b0-40e5-a81e-d771f2eb822b")
-		)
-		(pin "3"
-			(uuid "812f6d9b-474e-4643-bb65-dc6f06725034")
-		)
-		(pin "1"
-			(uuid "3fd6ec9d-665c-4e89-b1dc-b403ba47ba2a")
-		)
-		(pin "4"
-			(uuid "48e98869-ce93-4501-9fb4-0d8991120401")
-		)
-		(instances
-			(project "pico-hexo"
-				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 97.79 90)
 		(unit 1)
@@ -3930,7 +5161,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 97.79 0)
 			(effects
 				(font
@@ -3973,6 +5204,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 116.84 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12a68308-4b11-478c-b703-b7a4d93f7853")
+		(property "Reference" "D21"
+			(at 52.832 115.824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4af54841-1533-407e-9f8c-6a0573097ca3")
+		)
+		(pin "1"
+			(uuid "ee88ff30-84de-49b9-8d19-d506e8fb4c35")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 123.19 90)
 		(unit 1)
@@ -3997,7 +5296,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 123.19 0)
 			(effects
 				(font
@@ -4064,7 +5363,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 102.87 0)
 			(effects
 				(font
@@ -4197,7 +5496,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 60.96 0)
 			(effects
 				(font
@@ -4306,6 +5605,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 81.28 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "281add7e-e8c3-4f62-a7e7-a852b0f05b38")
+		(property "Reference" "D10"
+			(at 52.832 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a3d0a7d0-2ae0-4b6e-9ab9-513e9aeba416")
+		)
+		(pin "1"
+			(uuid "6b3f2963-3353-49a1-8939-407eeb84dd01")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f3b9012-0214-4fb0-bbd9-1cf32cb89b8f")
+		(property "Reference" "D6"
+			(at 52.832 66.294 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fc696ff0-0c5e-4dda-9840-6d57da40e772")
+		)
+		(pin "1"
+			(uuid "18eacad4-5dfe-40d2-9077-9b2886352ba1")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 100.33 90)
 		(unit 1)
@@ -4330,7 +5765,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 100.33 0)
 			(effects
 				(font
@@ -4400,7 +5835,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 69.85 0)
 			(effects
 				(font
@@ -4449,73 +5884,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3c7a885a-19fb-4604-9412-4ff0d4a4b9fa")
-		(property "Reference" "R32"
-			(at 89.916 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 98.044 143.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9caf293e-571b-482f-bdd1-aade48b15f3b")
-		)
-		(pin "2"
-			(uuid "f1d84f8c-2797-4d9d-b4a6-bbda3422b221")
-		)
-		(instances
-			(project "pico-hexo"
-				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 209.55 106.68 0)
 		(unit 1)
@@ -4543,7 +5911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 210.5152 110.49 0)
 			(effects
 				(font
@@ -4613,7 +5981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 69.85 0)
 			(effects
 				(font
@@ -4689,7 +6057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 111.76 0)
 			(effects
 				(font
@@ -4831,7 +6199,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 125.73 0)
 			(effects
 				(font
@@ -4907,7 +6275,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 55.88 0)
 			(effects
 				(font
@@ -4956,32 +6324,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 137.16 90)
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 130.81 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5ba3f743-6906-4fa4-971a-6ba9f1d8d098")
-		(property "Reference" "R29"
-			(at 89.916 135.89 90)
+		(uuid "5b211d6a-13a9-4763-8efb-8ca69901aa9f")
+		(property "Reference" "D25"
+			(at 52.832 129.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "330"
-			(at 98.044 135.89 90)
+		(property "Value" "3.3V"
+			(at 59.436 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 137.16 0)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4990,7 +6359,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 137.16 0)
+			(at 55.88 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4998,25 +6367,161 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 137.16 0)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "0d667134-565d-401f-98eb-61675e88ddbe")
 		)
 		(pin "2"
-			(uuid "4af9f1b5-ceb9-4059-a54d-c7003d170381")
+			(uuid "77fdf2d2-40c0-4f7f-8bf4-813221078942")
+		)
+		(pin "1"
+			(uuid "74446833-3339-4c0f-a2c4-3e504b2f5ae7")
 		)
 		(instances
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "R29")
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 72.39 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b308ccb-80e0-41b3-9d79-ed18b83e3180")
+		(property "Reference" "D8"
+			(at 52.832 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "63ed4bac-5545-4106-9cb4-5c861ec6285a")
+		)
+		(pin "1"
+			(uuid "9bb08185-f0c9-4bcb-a63e-f4dabfc10581")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 95.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d18f93d-1a8f-4cae-80cd-f263a6c19c12")
+		(property "Reference" "D14"
+			(at 52.832 94.234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f826f1a-d7a5-44c1-b247-74acc7bbb711")
+		)
+		(pin "1"
+			(uuid "40921334-0a17-43f3-8570-2d1a716744bd")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -5047,7 +6552,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 130.81 0)
 			(effects
 				(font
@@ -5117,7 +6622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 97.79 0)
 			(effects
 				(font
@@ -5193,7 +6698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 125.73 0)
 			(effects
 				(font
@@ -5266,7 +6771,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 125.73 0)
 			(effects
 				(font
@@ -5310,82 +6815,6 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 106.68 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66cae34d-4659-45cf-8adb-b9d5ba66fc0d")
-		(property "Reference" "J8"
-			(at 109.22 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SERVO_SIG"
-			(at 109.22 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 106.68 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 106.68 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "19308867-680a-41cb-ac3c-5fabcdc47b80")
-		)
-		(pin "3"
-			(uuid "4ef51d3b-ded8-4db2-96d3-05f496f60955")
-		)
-		(pin "1"
-			(uuid "c121f149-0b0a-473c-a556-289e2d062ebe")
-		)
-		(pin "4"
-			(uuid "7d6c7f02-1a7c-4571-83d7-d59fe623c4db")
-		)
-		(instances
-			(project "pico-hexo"
-				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
 		(at 137.16 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5412,7 +6841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -5488,7 +6917,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 111.76 0)
 			(effects
 				(font
@@ -5561,7 +6990,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 116.84 0)
 			(effects
 				(font
@@ -5631,7 +7060,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 83.82 0)
 			(effects
 				(font
@@ -5707,7 +7136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 125.73 0)
 			(effects
 				(font
@@ -5756,6 +7185,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 86.36 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "75c973f1-bf4a-464d-9b4d-6ee64be1a0f7")
+		(property "Reference" "D12"
+			(at 52.832 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a6afa6d2-7fae-4d42-a464-4c04e1d56ff3")
+		)
+		(pin "1"
+			(uuid "26deae50-1386-4050-b46d-f9fc98d9536b")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 128.27 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78366de0-46d6-4803-9874-3a42512a5a10")
+		(property "Reference" "D24"
+			(at 52.832 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57cf8cb9-a096-4cd7-87f2-1f0e2e67cf8d")
+		)
+		(pin "1"
+			(uuid "30036778-ba9b-4f50-af22-283ea7901f3d")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 69.85 90)
 		(unit 1)
@@ -5780,7 +7345,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 69.85 0)
 			(effects
 				(font
@@ -5847,7 +7412,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 53.34 0)
 			(effects
 				(font
@@ -5890,35 +7455,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 168.91 139.7 0)
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 123.19 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82a6bb44-c8d9-4735-9f98-1b3344db9b6e")
-		(property "Reference" "J22"
-			(at 171.45 139.6999 0)
+		(uuid "7dd21fe4-69c5-4988-959d-39742a62de56")
+		(property "Reference" "D22"
+			(at 52.832 122.174 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SERVO_GND"
-			(at 171.45 142.2399 0)
+		(property "Value" "3.3V"
+			(at 59.436 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 168.91 139.7 0)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5927,7 +7490,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 139.7 0)
+			(at 55.88 123.19 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5935,8 +7498,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 168.91 139.7 0)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5945,21 +7508,83 @@
 			)
 		)
 		(pin "2"
-			(uuid "e302ae10-7f71-4b7f-8ef5-24510d42afef")
-		)
-		(pin "3"
-			(uuid "d2ad101b-7294-49e4-8741-eeb7bca9c542")
+			(uuid "4da77c8c-58ef-42cc-9bc8-2f51ab166fa1")
 		)
 		(pin "1"
-			(uuid "37de8df9-518c-4419-b221-63e285a81e35")
-		)
-		(pin "4"
-			(uuid "4fd43a1f-76af-42b6-b5b4-ff6ee0568f87")
+			(uuid "a0a845c0-800b-4a6e-ad3d-ae1a191cebae")
 		)
 		(instances
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "J22")
+					(reference "D22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "879d468f-2bd4-4af5-86f8-e901aed5a701")
+		(property "Reference" "D4"
+			(at 52.832 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e3499d9f-9113-4ac2-aa37-4d94918df8b9")
+		)
+		(pin "1"
+			(uuid "7ba74da6-a4bf-417e-9dcb-851983abe22e")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5990,7 +7615,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 95.25 0)
 			(effects
 				(font
@@ -6057,7 +7682,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 114.3 0)
 			(effects
 				(font
@@ -6124,7 +7749,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 81.28 0)
 			(effects
 				(font
@@ -6194,7 +7819,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 55.88 0)
 			(effects
 				(font
@@ -6333,7 +7958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 55.88 0)
 			(effects
 				(font
@@ -6376,6 +8001,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 53.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94bc7993-c83e-4e14-be8e-7e5deaf87035")
+		(property "Reference" "D2"
+			(at 52.832 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81068796-da00-4296-82c2-8a3e36b23c92")
+		)
+		(pin "1"
+			(uuid "e564706a-730f-45b6-8667-1882968b8d25")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 109.22 90)
 		(unit 1)
@@ -6400,7 +8093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 109.22 0)
 			(effects
 				(font
@@ -6467,7 +8160,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -6534,7 +8227,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 83.82 0)
 			(effects
 				(font
@@ -6577,32 +8270,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 139.7 90)
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 109.22 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "af6aa9be-00ed-4b98-a4ea-347741d0bc52")
-		(property "Reference" "R30"
-			(at 89.916 138.43 90)
+		(uuid "a5122e45-e30f-414c-a1f2-f14d54676ad5")
+		(property "Reference" "D18"
+			(at 52.832 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "330"
-			(at 98.044 138.43 90)
+		(property "Value" "3.3V"
+			(at 59.436 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 139.7 0)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6611,7 +8305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 139.7 0)
+			(at 55.88 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6619,25 +8313,161 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 139.7 0)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "85f34219-f25e-4bd8-a163-a5ddd7a26356")
 		)
 		(pin "2"
-			(uuid "751bbae5-caf1-4f37-ace4-eae8a3429cdb")
+			(uuid "364bf8ed-2fa2-4d64-9416-81ba52502d6a")
+		)
+		(pin "1"
+			(uuid "031b5242-bd42-4934-96a7-f69a9fbfb308")
 		)
 		(instances
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "R30")
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae66cf62-ef04-4bdc-abae-e35d6cfbf94e")
+		(property "Reference" "D13"
+			(at 52.832 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4fea3cec-d517-4a87-92ee-ee51259087d8")
+		)
+		(pin "1"
+			(uuid "e1ffd786-2f74-4306-ae2e-b1864a81eb20")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 125.73 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b38df034-bc57-4d22-9701-0628d0a25c0a")
+		(property "Reference" "D23"
+			(at 52.832 124.714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a6f37054-3917-4680-afff-657ffd911f42")
+		)
+		(pin "1"
+			(uuid "2243f151-ae31-42d2-8bd7-033e7dfa560b")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -6671,7 +8501,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 106.68 69.85 0)
 			(effects
 				(font
@@ -6744,7 +8574,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 86.36 0)
 			(effects
 				(font
@@ -6787,6 +8617,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 102.87 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c39f089b-8744-4175-8da0-30027be7ceeb")
+		(property "Reference" "D17"
+			(at 52.832 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2cf8e4a2-cba7-4138-a022-4b46842fb8fb")
+		)
+		(pin "1"
+			(uuid "cdae180f-135f-4ba0-b074-0a6f367fd11f")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 128.27 90)
 		(unit 1)
@@ -6811,7 +8709,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 128.27 0)
 			(effects
 				(font
@@ -6878,7 +8776,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 74.93 0)
 			(effects
 				(font
@@ -6945,7 +8843,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 72.39 0)
 			(effects
 				(font
@@ -7015,7 +8913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 55.88 0)
 			(effects
 				(font
@@ -7091,7 +8989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 137.16 97.79 0)
 			(effects
 				(font
@@ -7167,7 +9065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 97.79 0)
 			(effects
 				(font
@@ -7216,32 +9114,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 142.24 90)
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 74.93 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e120cd9e-cd57-412a-a00b-43905793f93f")
-		(property "Reference" "R31"
-			(at 89.916 140.97 90)
+		(uuid "e55a8309-8269-4f72-a256-71eaeabd265e")
+		(property "Reference" "D9"
+			(at 52.832 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "330"
-			(at 98.044 140.97 90)
+		(property "Value" "3.3V"
+			(at 59.436 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 93.98 142.24 0)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7250,7 +9149,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 142.24 0)
+			(at 55.88 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7258,25 +9157,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 142.24 0)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "a3347f81-6dd5-4e40-8297-cf27d8ada76f")
 		)
 		(pin "2"
-			(uuid "fb045e3b-cb25-459f-a8bc-8adb4b4fbb97")
+			(uuid "86f208a4-3cba-4063-a9ef-17b2ed9820cd")
+		)
+		(pin "1"
+			(uuid "ea79613e-37c7-4a12-83a3-ee80b91ddc03")
 		)
 		(instances
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
-					(reference "R31")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -7310,7 +9209,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 168.91 83.82 0)
 			(effects
 				(font
@@ -7359,6 +9258,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 69.85 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb562962-cfd5-41fe-ba61-96e3ea8b9656")
+		(property "Reference" "D7"
+			(at 52.832 68.834 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9bca78cb-d2b3-4ad7-8db9-db0995114ca9")
+		)
+		(pin "1"
+			(uuid "4f921a50-e0f4-4cc2-938d-f8e1ed124eda")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 67.31 90)
 		(unit 1)
@@ -7383,7 +9350,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 67.31 0)
 			(effects
 				(font
@@ -7426,6 +9393,209 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 46.99 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef790303-4bfb-4e6d-9edd-050240936f27")
+		(property "Reference" "#PWR047"
+			(at 46.99 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c277b75c-8144-454b-b650-9d89d9ae39bc")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 83.82 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f04f6fb8-65f1-4a36-94f1-cd14a24d066f")
+		(property "Reference" "D11"
+			(at 52.832 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c7655c21-9ad9-41f7-b482-4974ae8befd8")
+		)
+		(pin "1"
+			(uuid "87fbb966-17f5-46c6-b650-a32e3ff24413")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 100.33 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f16a8b0e-0ea2-433c-a4f7-8c20b21b996b")
+		(property "Reference" "D16"
+			(at 52.832 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "16723398-80b9-4856-93dd-e7c6c04dcb5d")
+		)
+		(pin "1"
+			(uuid "4743daee-3327-4fb3-982b-743087804fea")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 223.52 106.68 0)
 		(unit 1)
@@ -7453,7 +9623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 224.4852 110.49 0)
 			(effects
 				(font
@@ -7562,6 +9732,142 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7074568-0291-48e6-ad77-0f1a88101871")
+		(property "Reference" "D20"
+			(at 52.832 113.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "29f145ef-f62b-4daa-8ea0-1bc5718c175f")
+		)
+		(pin "1"
+			(uuid "76a7ccd2-d1fd-4ee5-b474-5c4e873524be")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f83e44a0-973c-45bb-b340-76e4ea6b1bbc")
+		(property "Reference" "D15"
+			(at 52.832 96.774 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55fe5a0d-cba9-46ac-83b4-bfa3f37ed0b4")
+		)
+		(pin "1"
+			(uuid "5a246cce-f321-470b-afcf-24e31c639762")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 93.98 88.9 90)
 		(unit 1)
@@ -7586,7 +9892,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 93.98 88.9 0)
 			(effects
 				(font
@@ -7623,6 +9929,74 @@
 			(project "pico-hexo"
 				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 55.88 55.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffc050a1-351d-4246-a439-21fb33dd37ec")
+		(property "Reference" "D3"
+			(at 52.832 54.864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V"
+			(at 59.436 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 55.88 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 55.88 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f5969d47-84d9-4f45-91b6-a63dae2c2855")
+		)
+		(pin "1"
+			(uuid "32955aa6-9f15-4b3a-b80f-72776c056e93")
+		)
+		(instances
+			(project "pico-hexo"
+				(path "/249a9a7e-a950-4b1e-ad7d-a9cd3a27279c/5af8e142-fb58-41ba-9cf3-f697c93b3fc8"
+					(reference "D3")
 					(unit 1)
 				)
 			)
